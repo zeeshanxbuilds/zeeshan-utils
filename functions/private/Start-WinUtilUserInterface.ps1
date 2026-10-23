@@ -421,29 +421,27 @@ function Start-WinUtilUserInterface {
         Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
         $authorInfo = @"
-Author   : <a href="https://github.com/ChrisTitusTech">@ChrisTitusTech</a>
-UI       : <a href="https://github.com/MyDrift-user">@MyDrift-user</a>, <a href="https://github.com/Marterich">@Marterich</a>
-Runspace : <a href="https://github.com/DeveloperDurp">@DeveloperDurp</a>, <a href="https://github.com/Marterich">@Marterich</a>
-GitHub   : <a href="https://github.com/ChrisTitusTech/winutil">ChrisTitusTech/winutil</a>
-Version  : <a href="https://github.com/ChrisTitusTech/winutil/releases/tag/$($sync.version)">$($sync.version)</a>
+Maintainer: <a href="https://github.com/zeeshanxbuilds">@zeeshanxbuilds</a>
+GitHub   : <a href="https://github.com/zeeshanxbuilds/zeeshan-utils">zeeshanxbuilds/zeeshan-utils</a>
+Version  : <a href="https://github.com/zeeshanxbuilds/zeeshan-utils/releases/tag/$($sync.version)">$($sync.version)</a>
 "@
         Show-CustomDialog -Title "About" -Message $authorInfo
     })
     $sync["DocumentationMenuItem"].Add_Click({
         Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
-        Start-Process "https://winutil.christitus.com/"
+        Start-Process "https://zeeshan.cv/"
     })
     $sync["SponsorMenuItem"].Add_Click({
         Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
         $authorInfo = @"
-<a href="https://github.com/sponsors/ChrisTitusTech">Current sponsors for ChrisTitusTech:</a>
+<a href="https://github.com/sponsors/zeeshanxbuilds">Current sponsors for zeeshanxbuilds:</a>
 "@
         $authorInfo += "`n"
         try {
             $sponsors = Invoke-WinUtilSponsors
             foreach ($sponsor in $sponsors) {
-                $authorInfo += "<a href=`"https://github.com/sponsors/ChrisTitusTech`">$sponsor</a>`n"
+                $authorInfo += "<a href=`"https://github.com/sponsors/zeeshanxbuilds`">$sponsor</a>`n"
             }
         } catch {
             $authorInfo += "An error occurred while fetching or processing the sponsors: $_`n"

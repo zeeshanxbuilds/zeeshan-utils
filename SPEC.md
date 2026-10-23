@@ -1,12 +1,12 @@
 # SPEC.md
 
-Project contract for WinUtil — what the project is, how it's built, and how it runs. Written for anyone, human or AI, who needs to understand the project itself.
+Project contract for Zeeshan Tool (`zeeshan-utils`) — what the project is, how it's built, and how it runs. Written for anyone, human or AI, who needs to understand the project itself.
 
 `AGENTS.md` in the repository root points here for these facts, and separately covers how an agent should behave while working in this repo. This file does not change based on who's reading it.
 
 ## Project Context
 
-WinUtil is a Windows PowerShell utility with a WPF interface. The repository is maintained as modular source, but the distributed artifact is one compiled PowerShell script.
+Zeeshan Tool is a Windows PowerShell utility with a WPF interface. The repository is maintained as modular source, but the distributed artifact is one compiled PowerShell script.
 
 ### Stack
 

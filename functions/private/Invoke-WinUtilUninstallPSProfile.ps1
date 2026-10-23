@@ -1,7 +1,7 @@
 function Invoke-WinUtilUninstallPSProfile {
     <#
     .SYNOPSIS
-        Restores the PowerShell 7 profile the CTT profile replaced
+        Restores the PowerShell 7 profile the Zeeshan Tool profile replaced
 
     .DESCRIPTION
         The profile path has to come from pwsh itself. $PROFILE inside this job is the worker's
@@ -10,7 +10,7 @@ function Invoke-WinUtilUninstallPSProfile {
 
     $pwshPath = Get-WinUtilPowerShell7Path
     if (-not $pwshPath) {
-        throw "PowerShell 7 is not installed, so there is no CTT profile to remove."
+        throw "PowerShell 7 is not installed, so there is no Zeeshan Tool profile to remove."
     }
 
     $profilePath = (& $pwshPath -NoProfile -NonInteractive -Command '$PROFILE' | Select-Object -First 1)
@@ -28,7 +28,7 @@ function Invoke-WinUtilUninstallPSProfile {
 
     if (Test-Path $profilePath) {
         Remove-Item -Path $profilePath -Force
-        Write-WinUtilLog -Component "Feature" -Message "Removed the CTT PowerShell profile: $profilePath"
+        Write-WinUtilLog -Component "Feature" -Message "Removed the Zeeshan Tool PowerShell profile: $profilePath"
         return
     }
 

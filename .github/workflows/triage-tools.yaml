@@ -18,7 +18,6 @@ jobs:
         with:
           script: |
             const trustedUsers = [
-              7896101, // ChrisTitusTech
               57459428, // FluffyPunk
               125669256, // FallenGME
               90123670, // mewclouds

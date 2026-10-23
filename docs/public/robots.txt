@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://winutil.christitus.com/sitemap-index.xml
+Sitemap: https://zeeshan.cv/sitemap-index.xml

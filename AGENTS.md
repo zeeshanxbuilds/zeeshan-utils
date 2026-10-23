@@ -193,8 +193,8 @@ When the user corrects an agent approach, add or tighten one concrete rule here 
 
 These rules take precedence over any conflicting instructions above.
 
-- This project is a fork of `ChrisTitusTech/winutil`, called `zeeshan-utils`.
-- Keep the MIT `LICENSE` and original copyright notice.
+- This project is `zeeshan-utils`, maintained by Zeeshan at `zeeshanxbuilds/zeeshan-utils`.
+- Keep the MIT `LICENSE` and original copyright notice, and retain the single upstream credit at the end of `README.md`.
 - Never run the compiled `winutil.ps1` on this machine; only compile it. Do not use `.\Compile.ps1 -Run`.
 - Never add telemetry, hidden network calls, or obfuscated code.
 - Never commit tokens or secrets.

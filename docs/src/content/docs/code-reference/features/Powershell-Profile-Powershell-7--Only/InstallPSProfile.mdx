@@ -1,11 +1,11 @@
 ---
-title: "CTT PowerShell Profile - Install"
+title: "Zeeshan Tool PowerShell Profile - Install"
 description: ""
 editUrl: false
 ---
 
 :::note
-This page is generated from [`functions/private/Invoke-WinUtilInstallPSProfile.ps1`](https://github.com/ChrisTitusTech/winutil/blob/main/functions/private/Invoke-WinUtilInstallPSProfile.ps1). Do not edit this page directly.
+This page is generated from [`functions/private/Invoke-WinUtilInstallPSProfile.ps1`](https://github.com/zeeshanxbuilds/zeeshan-utils/blob/main/functions/private/Invoke-WinUtilInstallPSProfile.ps1). Do not edit this page directly.
 :::
 
 ```powershell title="functions/private/Invoke-WinUtilInstallPSProfile.ps1"
@@ -25,7 +25,7 @@ function Get-WinUtilPowerShell7Path {
 function Invoke-WinUtilInstallPSProfile {
     <#
     .SYNOPSIS
-        Installs the CTT PowerShell profile
+        Installs the Zeeshan Tool PowerShell profile
 
     .DESCRIPTION
         The profile targets PowerShell 7, so its setup script has to run under pwsh rather than
@@ -75,6 +75,6 @@ function Invoke-WinUtilInstallPSProfile {
         throw "The profile setup script reported $failures error(s); see the log."
     }
 
-    Write-WinUtilLog -Component "Feature" -Message "CTT PowerShell profile installed. Open a new PowerShell 7 session to use it."
+    Write-WinUtilLog -Component "Feature" -Message "Zeeshan Tool PowerShell profile installed. Open a new PowerShell 7 session to use it."
 }
 ```

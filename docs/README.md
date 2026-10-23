@@ -2,7 +2,7 @@
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-Documentation site for [WinUtil](https://github.com/ChrisTitusTech/winutil), built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). Served at [winutil.christitus.com](https://winutil.christitus.com/).
+Documentation site for [WinUtil](https://github.com/zeeshanxbuilds/zeeshan-utils), built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). Served at [zeeshan.cv](https://zeeshan.cv/).
 
 ## 🚀 Project Structure
 
@@ -58,4 +58,4 @@ The first `docker compose up` (or any command before an image exists) builds the
 
 ## 👀 Want to learn more?
 
-Check out [Starlight's docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Check out [Starlight's docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro discussion forum](https://astro.build/chat).

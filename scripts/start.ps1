@@ -1,8 +1,7 @@
 <#
 .NOTES
-    Author         : Chris Titus @christitustech
-    Runspace Author: @DeveloperDurp
-    GitHub         : https://github.com/ChrisTitusTech
+    Maintainer     : Zeeshan @zeeshanxbuilds
+    GitHub         : https://github.com/zeeshanxbuilds
     Version        : #{replaceme}
 #>
 
@@ -169,7 +168,7 @@ if (`$launch.Headless) { `$env:WINUTIL_HEADLESS_CHILD = '1' }
 if (`$launch.ScriptPath) {
     & `$launch.ScriptPath @invokeParameters
 } else {
-    `$remoteScript = [ScriptBlock]::Create((Invoke-RestMethod 'https://github.com/ChrisTitusTech/winutil/releases/latest/download/winutil.ps1'))
+    `$remoteScript = [ScriptBlock]::Create((Invoke-RestMethod 'https://github.com/zeeshanxbuilds/zeeshan-utils/releases/latest/download/winutil.ps1'))
     & `$remoteScript @invokeParameters
 }
 "@
@@ -263,5 +262,5 @@ $sync.logPath = "$logdir\winutil_$dateTime.log"
 $sync.transcriptPath = $sync.logPath
 Start-Transcript -Path $sync.transcriptPath -Append -NoClobber | Out-Null
 
-$Host.UI.RawUI.WindowTitle = "WinUtil"
+$Host.UI.RawUI.WindowTitle = "Zeeshan Tool"
 Clear-Host

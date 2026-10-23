@@ -14,7 +14,7 @@ function Get-WinUtilPowerShell7Path {
 function Invoke-WinUtilInstallPSProfile {
     <#
     .SYNOPSIS
-        Installs the CTT PowerShell profile
+        Installs the Zeeshan Tool PowerShell profile
 
     .DESCRIPTION
         The profile targets PowerShell 7, so its setup script has to run under pwsh rather than
@@ -64,5 +64,5 @@ function Invoke-WinUtilInstallPSProfile {
         throw "The profile setup script reported $failures error(s); see the log."
     }
 
-    Write-WinUtilLog -Component "Feature" -Message "CTT PowerShell profile installed. Open a new PowerShell 7 session to use it."
+    Write-WinUtilLog -Component "Feature" -Message "Zeeshan Tool PowerShell profile installed. Open a new PowerShell 7 session to use it."
 }
